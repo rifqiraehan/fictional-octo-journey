@@ -1,0 +1,9 @@
+D:/QtProjects/PenghitungIPS/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/PenghitungIPS.dir
+D:/QtProjects/PenghitungIPS/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+D:/QtProjects/PenghitungIPS/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+D:/QtProjects/PenghitungIPS/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/list_install_components.dir
+D:/QtProjects/PenghitungIPS/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/install.dir
+D:/QtProjects/PenghitungIPS/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/install/local.dir
+D:/QtProjects/PenghitungIPS/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/install/strip.dir
+D:/QtProjects/PenghitungIPS/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/PenghitungIPS_autogen_timestamp_deps.dir
+D:/QtProjects/PenghitungIPS/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/PenghitungIPS_autogen.dir

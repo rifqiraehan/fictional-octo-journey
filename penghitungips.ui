@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PenghitungIPS</class>
+ <widget class="QMainWindow" name="PenghitungIPS">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PenghitungIPS</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout1">
+      <item>
+       <widget class="QLabel" name="labelMatkul">
+        <property name="text">
+         <string>Nama Mata Kuliah</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="matkulLineEdit"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout2">
+      <item>
+       <widget class="QLabel" name="labelSKS">
+        <property name="text">
+         <string>Jumlah SKS</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="sksLineEdit"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout3">
+      <item>
+       <widget class="QLabel" name="labelNilai">
+        <property name="text">
+         <string>Nilai</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="nilaiComboBox">
+        <item>
+         <property name="text">
+          <string>A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>AB</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>B</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>BC</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>D</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>E</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout4">
+      <item>
+       <widget class="QPushButton" name="addButton">
+        <property name="text">
+         <string>Tambahkan Mata Kuliah</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="calculateButton">
+        <property name="text">
+         <string>Hitung IPS</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="tableWidget">
+      <column>
+       <property name="text">
+        <string>Mata Kuliah</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>SKS</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Nilai</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="statusLabel"/>
+    </item>
+    <item>
+     <widget class="QLabel" name="ipsLabel">
+      <property name="text">
+       <string>IPS: </string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
