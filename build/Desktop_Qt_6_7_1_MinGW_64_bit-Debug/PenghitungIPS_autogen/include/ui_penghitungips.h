@@ -43,6 +43,7 @@ public:
     QHBoxLayout *horizontalLayout4;
     QPushButton *addButton;
     QPushButton *calculateButton;
+    QPushButton *deleteButton;
     QTableWidget *tableWidget;
     QLabel *statusLabel;
     QLabel *ipsLabel;
@@ -122,6 +123,11 @@ public:
 
         horizontalLayout4->addWidget(calculateButton);
 
+        deleteButton = new QPushButton(centralwidget);
+        deleteButton->setObjectName("deleteButton");
+
+        horizontalLayout4->addWidget(deleteButton);
+
 
         verticalLayout->addLayout(horizontalLayout4);
 
@@ -178,6 +184,7 @@ public:
 
         addButton->setText(QCoreApplication::translate("PenghitungIPS", "Tambahkan Mata Kuliah", nullptr));
         calculateButton->setText(QCoreApplication::translate("PenghitungIPS", "Hitung IPS", nullptr));
+        deleteButton->setText(QCoreApplication::translate("PenghitungIPS", "Hapus Baris", nullptr));
         QTableWidgetItem *___qtablewidgetitem = tableWidget->horizontalHeaderItem(0);
         ___qtablewidgetitem->setText(QCoreApplication::translate("PenghitungIPS", "Mata Kuliah", nullptr));
         QTableWidgetItem *___qtablewidgetitem1 = tableWidget->horizontalHeaderItem(1);

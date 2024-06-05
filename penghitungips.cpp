@@ -19,6 +19,8 @@ PenghitungIPS::PenghitungIPS(QWidget *parent)
     connect(ui->addButton, &QPushButton::clicked, this, &PenghitungIPS::on_addButton_clicked);
 
     connect(ui->calculateButton, &QPushButton::clicked, this, &PenghitungIPS::on_calculateButton_clicked);
+
+    connect(ui->deleteButton, &QPushButton::clicked, this, &PenghitungIPS::on_deleteButton_clicked);
 }
 
 PenghitungIPS::~PenghitungIPS()
@@ -78,12 +80,19 @@ void PenghitungIPS::on_addButton_clicked()
 
     int rowCount = ui->tableWidget->rowCount();
     ui->tableWidget->insertRow(rowCount);
-    ui->tableWidget->setItem(rowCount, 0, new QTableWidgetItem(namaMatkul));
-    ui->tableWidget->setItem(rowCount, 1, new QTableWidgetItem(QString::number(sks)));
-    ui->tableWidget->setItem(rowCount, 2, new QTableWidgetItem(nilai));
+
+    QTableWidgetItem *matkulItem = new QTableWidgetItem(namaMatkul);
+    QTableWidgetItem *sksItem = new QTableWidgetItem(QString::number(sks));
+    QTableWidgetItem *nilaiItem = new QTableWidgetItem(nilai);
+
+    ui->tableWidget->setItem(rowCount, 0, matkulItem);
+    ui->tableWidget->setItem(rowCount, 1, sksItem);
+    ui->tableWidget->setItem(rowCount, 2, nilaiItem);
 
     ui->matkulLineEdit->clear();
     ui->sksLineEdit->clear();
+    ui->nilaiComboBox->setCurrentIndex(0);
+
     ui->statusLabel->setText("Mata kuliah berhasil ditambahkan.");
 
     calculateIPS();
@@ -92,6 +101,16 @@ void PenghitungIPS::on_addButton_clicked()
 void PenghitungIPS::on_calculateButton_clicked()
 {
     calculateIPS();
+}
+
+void PenghitungIPS::on_deleteButton_clicked()
+{
+    QList<QTableWidgetSelectionRange> selectionRanges = ui->tableWidget->selectedRanges();
+    for (const QTableWidgetSelectionRange &range : selectionRanges) {
+        for (int row = range.bottomRow(); row >= range.topRow(); row--) {
+            ui->tableWidget->removeRow(row);
+        }
+    }
 }
 
 void PenghitungIPS::on_cellChanged(int row, int column)

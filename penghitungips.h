@@ -21,6 +21,7 @@ public:
 private slots:
     void on_addButton_clicked();
     void on_calculateButton_clicked();
+    void on_deleteButton_clicked();
     void on_cellChanged(int row, int column);
 
 private:
